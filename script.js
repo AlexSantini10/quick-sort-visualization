@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
     initCanva();
 
     for(let i=0; i<colNumber; ++i){
-        let val = Math.floor(Math.random() * canvas.height-30) + dim;
+        let val = Math.floor(Math.random() * canvas.height - 30) + dim;
+        if (val<0) val = 5;
         if (val%5 != 0) val += 5 - val%5;
         arr.push(val);
     }
 
     drawCols();
-
-
+    // test arr = arr.sort((a,b) => {return a-b});
 
 });
