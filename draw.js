@@ -1,5 +1,5 @@
 function initCanva() {
-    ctx.fillStyle = "rgb(30, 30, 30)";
+    ctx.fillStyle = "rgb(32, 32, 37)";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
