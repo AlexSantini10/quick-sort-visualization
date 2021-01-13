@@ -23,6 +23,7 @@ function drawColB(x, val, width) {
 }
 
 function drawCols() {
+    initCanva();
     for(let i=0; i<colNumber; ++i) {
         drawColB(i*20 + (offset/2), arr[i], 18);
     }
