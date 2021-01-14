@@ -38,4 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     states = new Array(colNumber);
     quickSort(arr, 0, arr.length-1);
-});
+}); 

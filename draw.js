@@ -12,7 +12,7 @@ function drawCol(xPos, yPos, width, height, color = "#EDEDED") {
     ctx.fillStyle = color;
     ctx.fillRect(xPos, yPos, width, height);
 }
-
+ 
 function drawColBorder(xPos, yPos, width, height, color = "white") {
     drawBorder(xPos, yPos, width-2, height-2);
     drawCol(xPos, yPos, width, height, color);

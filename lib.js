@@ -21,7 +21,7 @@ async function partition(arr, start, end) {
     for (let i = start; i < end; i++) {
         states[i] = 1;
     }
-
+ 
     let pivotValue = arr[end];
     let pivotIndex = start;
     states[pivotIndex] = 0;
