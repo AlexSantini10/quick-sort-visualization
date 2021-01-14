@@ -1,6 +1,5 @@
-var arr = new Array();
-var states = new Array();
-
+let arr = new Array();
+let states = new Array();
 var colNumber = 0;
 const dim = 20;
 var offset;
@@ -37,14 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (val%5 != 0) val += 5 - val%5;
         arr.push(val);
     }
-
     states = new Array(colNumber);
-
-    drawCols();
-    /*
-    arr = arr.sort((a,b) => {return a-b});
-    drawCols();
-    */
-
     quickSort(arr, 0, arr.length-1);
 });

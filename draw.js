@@ -18,13 +18,25 @@ function drawColBorder(xPos, yPos, width, height, color = "white") {
     drawCol(xPos, yPos, width, height, color);
 }
 
-function drawColB(x, val, width) {
-    drawColBorder(x, canvas.height-val, width, val);
+function drawColB(x, val, width, color = "white") {
+    drawColBorder(x, canvas.height-val, width, val, color);
 }
 
-function drawCols() {
+async function drawCols(arr) {
     initCanva();
     for(let i=0; i<colNumber; ++i) {
-        drawColB(i*20 + (offset/2), arr[i], 18);
+        switch (states[i]) {
+            case 1:
+                drawColB(i*20 + (offset/2), arr[i], 18, "white");
+                break;
+    
+            case 0:
+                drawColB(i*20 + (offset/2), arr[i], 18, "#d512e3");
+                break;
+
+            case -1:
+                drawColB(i*20 + (offset/2), arr[i], 18, "#37db42");
+                break;
+        }
     }
 }
